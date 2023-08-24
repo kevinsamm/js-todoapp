@@ -1,6 +1,6 @@
 import html from './app.html?raw';
 import todoStore, { Filters } from '../store/todo.store';
-import { renderTodos, updatePending } from './use-cases';
+import { renderTodos, renderPending } from './use-cases';
 
 const ElementIds = {
     ClearCompleted: '.clear-completed',
@@ -17,7 +17,7 @@ const ElementIds = {
 export const App = (elementId) => {
     
     const updatePendingLabel = () => {
-        updatePending( ElementIds.PendingCount );
+        renderPending( ElementIds.PendingCount );
     }
     
     const displayTodos = () => {

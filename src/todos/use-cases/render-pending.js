@@ -5,7 +5,7 @@ let element;
  * 
  * @param {String} elementId 
  */
-export const updatePending = ( elementId ) => {
+export const renderPending = ( elementId ) => {
     if ( !element ) {
         element = document.querySelector( elementId );
     }
